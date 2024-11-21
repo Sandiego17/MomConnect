@@ -1,0 +1,109 @@
+:root {
+  /* Primary Colors */
+  --color-primary-soft-blue: #45deef;
+  --color-primary-navy-blue: #457b9d;
+
+  /* Secondary Colors */
+  --color-secondary-pale-grey: #f1faee;
+  --color-secondary-cool-mint: #b7e4c7;
+
+  /* Accents */
+  --color-accent-sandy-beige: #e9c46a;
+  --color-accent-peach-pink: #f4a261;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* Font sizes starts */
+
+h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw + 0.25rem, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(0.875rem, 1vw + 0.125rem, 1.5rem);
+}
+
+p,
+label,
+ul,
+ol,
+span,
+a,
+button {
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
+}
+
+/* Font sizes ends */
+
+a {
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-accent-peach-pink);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons styles starts */
+
+button {
+  padding: 0.875rem 1.5rem;
+  outline: none;
+  border: none;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  transition: background-color 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-soft-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-navy-blue);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary-pale-grey);
+  border: 1px solid #afaaaa;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-cool-mint);
+  border: none;
+}
+
+/* Button styles ends */
