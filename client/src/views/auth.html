@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn + SignUp Forms</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/client/src/styles/style.css">
+  <link rel="stylesheet" href="/client/src/styles/auth.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="sign-up-container">
+      <div class="side-container" id="overlayCon">
+        <h1 class="glow">Hi!</h1>
+          <p class="glow">Already a member? Hop back into the community!</p>
+        <button id="open-sign-in-form">Sign In</button>
+      </div>
+      <div class="form-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <p>Please enter your personal details to join the community.</p>
+          <!-- <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span> -->
+          <div class="infield">
+            <input type="text" placeholder="Name" />
+            <label></label>
+          </div>
+          <div class="users">
+            <div class="select">
+              <select name="users">
+                <option value="" class="select-holder" disabled selected>User</option>
+                <option value="client">Client</option>
+                <option value="professional">Professional</option>
+              </select>
+            </div>
+            <div class="select">
+              <select name="state">
+                <option value="" class="select-holder" disabled selected>Select your state</option>
+                <option value="abuja">Abuja FCT</option>
+                <option value="abia">Abia</option>
+                <option value="adamawa">Adamawa</option>
+                <option value="akwa-ibom">Akwa Ibom</option>
+                <option value="anambra">Anambra</option>
+                <option value="bauchi">Bauchi</option>
+                <option value="bayelsa">Bayelsa</option>
+                <option value="benue">Benue</option>
+                <option value="borno">Borno</option>
+                <option value="cross-river">Cross River</option>
+                <option value="delta">Delta</option>
+                <option value="ebonyi">Ebonyi</option>
+                <option value="edo">Edo</option>
+                <option value="ekiti">Ekiti</option>
+                <option value="enugu">Enugu</option>
+                <option value="gombe">Gombe</option>
+                <option value="imo">Imo</option>
+                <option value="jigawa">Jigawa</option>
+                <option value="kaduna">Kaduna</option>
+                <option value="kano">Kano</option>
+                <option value="katsina">Katsina</option>
+                <option value="kebbi">Kebbi</option>
+                <option value="kogi">Kogi</option>
+                <option value="kwara">Kwara</option>
+                <option value="lagos">Lagos</option>
+                <option value="nasarawa">Nasarawa</option>
+                <option value="niger">Niger</option>
+                <option value="ogun">Ogun</option>
+                <option value="ondo">Ondo</option>
+                <option value="osun">Osun</option>
+                <option value="oyo">Oyo</option>
+                <option value="plateau">Plateau</option>
+                <option value="rivers">Rivers</option>
+                <option value="sokoto">Sokoto</option>
+                <option value="taraba">Taraba</option>
+                <option value="yobe">Yobe</option>
+                <option value="zamfara">Zamfara</option>
+              </select>
+            </div>
+          </div>
+          <div class="infield">
+            <input type="email" placeholder="Email" name="email"/>
+            <label></label>
+          </div>
+          <div class="infield">
+            <input type="password" placeholder="Password" />
+            <label></label>
+          </div>
+          <div class="infield">
+            <input type="password" placeholder="Confirm Password" />
+            <label></label>
+          </div>
+          <button class="btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="sign-in-container">
+      <div class="form-container">
+        <form action="#">
+          <h1>Welcome Back!</h1>
+          <p>To rejoin the community, please login with your personal information.</p>
+          <!-- <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span> -->
+          <div class="infield">
+            <input type="email" placeholder="Email" name="email"/>
+            <label></label>
+          </div>
+          <div class="infield">
+            <input type="password" placeholder="Password" />
+            <label></label>
+          </div>
+          <a href="#" class="forgot">Forgot your password?</a>
+          <button class="btn-primary">Sign In</button>
+        </form>
+      </div>
+      <div class="side-container" id="overlayCon">
+        <h1 class="glow">Hello!</h1>
+          <p class="glow">Don't have an account? Create one here!</p>
+        <button id="open-sign-up-form">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="overlayBtn" class="btn-primary">Sign Up Form</button>
+
+  <script src="/client/src/apps/auth.js"></script>
+</body>
+</html>

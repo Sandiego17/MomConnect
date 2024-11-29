@@ -2,6 +2,9 @@
   /* Primary Colors */
   --color-primary-soft-blue: #45deef;
   --color-primary-navy-blue: #457b9d;
+  --color-primary-deep-blue: #003479;
+
+  --primary-grad: linear-gradient(to right, var(--color-primary-soft-blue), var(--color-primary-navy-blue));
 
   /* Secondary Colors */
   --color-secondary-pale-grey: #f1faee;
@@ -27,10 +30,10 @@ body {
 /* Font sizes starts */
 
 h1 {
-  font-size: clamp(2rem, 5vw + 1rem, 4rem);
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
 }
 
-h2 {
+/* h2 {
   font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
 }
 
@@ -58,7 +61,7 @@ span,
 a,
 button {
   font-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
-}
+} */
 
 /* Font sizes ends */
 
@@ -89,11 +92,12 @@ button {
 }
 
 .btn-primary {
-  background-color: var(--color-primary-soft-blue);
+  background-color: var(--color-primary-navy-blue);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-navy-blue);
+  background-image: var(--primary-grad);
+  /* color: var(--color-primary-deep-blue); */
 }
 
 .btn-secondary {
